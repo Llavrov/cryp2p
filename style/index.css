@@ -18,6 +18,14 @@ div {
     font-family: 'Montserrat', sans-serif;
 }
 
+
+a {
+    outline: none;
+    text-decoration: none;
+    padding: 2px 1px 0;
+    color: black;
+}
+
 .border {
     max-width: 1248px;
     width: 100%;
@@ -106,6 +114,10 @@ header {
 
     transition: 1s;
     cursor: pointer;
+}
+
+.btn-full a {
+    color: white;
 }
 
 .btn-full:hover {
@@ -318,6 +330,10 @@ header {
 
     transition: 1s;
     cursor: pointer;
+}
+
+.title-btn a {
+    color: white;
 }
 
 .title-btn:hover {
@@ -601,6 +617,18 @@ header {
     margin: 10px;
     box-sizing: border-box;
     padding: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.about-block-card p {
+    position: absolute;
+    bottom: 20px;
+}
+
+.about-block-card img{
+    width: 100%;
+    object-fit: cover;
 }
 
 /*
@@ -650,6 +678,8 @@ footer {
     .btn-full {
         display: none;
     }
+
+
 
     .block_00-btn {
         bottom: 20px;
