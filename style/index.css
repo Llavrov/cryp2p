@@ -593,12 +593,12 @@ header {
 .about-block-card {
     width: 100%;
     height: 100vh;
-    max-width: 400px;
-    max-height: 400px;
+    max-width: 390px;
+    max-height: 390px;
     background: white;
     border-radius: 20px;
 
-    margin: 20px;
+    margin: 10px;
     box-sizing: border-box;
     padding: 20px;
 }
