@@ -657,6 +657,10 @@ footer p:hover {
     color: #406DD6;
 }
 
+footer a {
+    text-align: center;
+}
+
 
 /*
     Mobile versions
