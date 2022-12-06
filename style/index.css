@@ -421,6 +421,10 @@ header {
     background: linear-gradient(110.26deg, #6AE5FA -12.33%, #161C22 45.65%, #040F97 168%);
 }
 
+.arbitragh-block_price {
+    margin-bottom: 80px !important;
+}
+
 .block_00-btn {
     color: black;
     padding: 12px 60px;
