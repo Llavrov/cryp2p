@@ -6,7 +6,7 @@
 }
 
 body {
-    background: #F3F3F3;
+    background: black;
 }
 
 ul,
@@ -155,11 +155,15 @@ header {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
-    font-size: 50px;
-    line-height: 64px;
-    margin: 95px 0;
+    font-size: 32px;
+    line-height: 44px;
+    margin: 140px 0 120px;
 
-    color: #000000;
+    color: white;
+}
+
+.white-title {
+    color: white;
 }
 
 .preview-points {
@@ -238,6 +242,7 @@ header {
     line-height: 64px;
 
     margin-bottom: 80px;
+    color: white;
 }
 
 .for-who-card {
@@ -318,6 +323,8 @@ header {
     font-weight: 500;
     font-size: 50px;
     line-height: 64px;
+
+    color: white;
 }
 
 .title-btn {
@@ -454,6 +461,8 @@ header {
     font-weight: 500;
     font-size: 50px;
     line-height: 64px;
+
+    color: white;
 }
 
 .work-blocks_container {
@@ -480,7 +489,8 @@ header {
 .work-block_content {
     position: absolute;
     z-index: 2;
-    height: 360px;
+    height: 400px;
+    width: calc(100% - 20px);
 }
 
 .work-block p:nth-child(1),
@@ -596,6 +606,7 @@ header {
     line-height: 64px;
 
     margin-bottom: 80px;
+    color: white;
 }
 
 .about-block-cards_container {
@@ -683,6 +694,8 @@ footer a {
 
     .banner-first_container p {
         font-size: 38px;
+        line-height: 34px;
+        text-align: center;
     }
 
     .work-block {
@@ -732,7 +745,7 @@ footer a {
     }
 
     .preview_container h1 {
-        font-size: 27px;
+        font-size: 20px;
         line-height: 32px;
         margin: 40px 0;
     }
@@ -768,7 +781,6 @@ footer a {
     }
 
     .work-blocks-title_container {
-        justify-content: center;
         margin: 40px 0;
     }
 
@@ -906,12 +918,12 @@ footer a {
 
     .arbitragh-block_02,
     .arbitragh-block_03,
-    .work-block_01,
-    .work-block_03,
     .work-block_content {
         height: unset;
     }
 
+    .work-block_01,
+    .work-block_03,
     .work-block_02,
     .work-block_04 {
         height: 380px;
@@ -920,6 +932,12 @@ footer a {
     .block_00-btn {
         width: 100%;
         max-width: calc(100% - 160px);
+        right: unset;
+    }
+
+    .work-block_content .block_00-btn {
+        max-width: calc(100% - 140px);
+        bottom: 0;
     }
 
     .about-block-title {
