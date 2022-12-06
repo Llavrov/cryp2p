@@ -400,7 +400,7 @@ header {
     width: 100%;
     /*height: 286px;*/
 
-    background: linear-gradient(92.7deg, #F5EC57 5.6%, #60F152 54.42%, #71F4F8 99.72%);
+    background: linear-gradient(92.7deg, #051097 5.6%, #60F152 54.42%, #71F4F8 99.72%);
     border-radius: 10px;
 }
 
@@ -529,7 +529,7 @@ header {
 
 .work-block_01 {
     width: calc(50% - 25px);
-    background: linear-gradient(113.84deg, #6AE6EB 1.69%, #E2347D 100%);
+    background: linear-gradient(113.84deg, #051097 1.69%, #E2347D 100%);
 }
 
 .work-block_02 {
