@@ -135,6 +135,7 @@ header {
     justify-content: space-between;
     margin: 80px auto;
     flex-wrap: wrap;
+    position: relative;
 }
 
 .preview-image_container {
@@ -154,12 +155,45 @@ header {
 .preview_container h1 {
     font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 44px;
-    margin: 140px 0 120px;
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 60px;
+    margin: 140px 10px 120px;
+    text-align: center;
 
     color: white;
+}
+
+#preview_background {
+    width: 100%;
+    position: absolute;
+    z-index: -2;
+    top: 0;
+}
+
+#preview_background img {
+    width: 100%;
+    position: absolute;
+    z-index: -2;
+}
+
+.preview_background-top,
+.preview_background-bottom {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    z-index: -1;
+}
+
+.preview_background-bottom {
+    bottom: -750px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 30.21%);
+}
+
+.preview_background-top {
+    top: -30px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 30.21%);
+    transform: rotate(-180deg);
 }
 
 .white-title {
@@ -198,7 +232,7 @@ header {
 */
 
 .banner-first_container {
-    margin: 100px auto;
+    margin: 200px auto 100px;
     height: 124px;
     display: flex;
     align-items: center;
@@ -210,7 +244,7 @@ header {
 .banner-first_container p {
     font-style: normal;
     font-weight: 500;
-    font-size: 50px;
+    font-size: 40px;
     line-height: 64px;
 
     color: #FFFFFF;
@@ -311,6 +345,10 @@ header {
     Fiftieth block container - Арбитраж-программы
 */
 
+.arbitragh_container {
+    margin-top: 100px;
+}
+
 .arbitragh-title_container {
     display: flex;
     align-items: center;
@@ -345,6 +383,13 @@ header {
 
 .title-btn:hover {
     box-shadow: 0 125px 80px rgb(23 58 105 / 7%), 0 81.0185px 46.8519px rgb(23 58 105 / 5%), 0 48.1481px 25.4815px rgb(23 58 105 / 4%), 0 25px 13px rgb(23 58 105 / 4%), 0 10.1852px 6.51852px rgb(23 58 105 / 3%), 0 2.31481px 3.14815px rgb(23 58 105 / 2%);
+}
+
+.card-logo {
+    position: absolute;
+    top: -20px;
+    right: 0;
+    width: 100px;
 }
 
 .arbitragh-block {
@@ -476,7 +521,7 @@ header {
     flex-wrap: wrap;
 
     margin-top: 80px;
-    margin-bottom: 80px;
+    margin-bottom: 30px;
 }
 
 .work-block {
@@ -656,7 +701,7 @@ header {
 
 footer {
     background: white;
-    height: 200px;
+    height: 100px;
     border-radius: 20px;
     -moz-border-radius-topleft: 20px;
     -moz-border-radius-topright: 20px;
@@ -667,7 +712,7 @@ footer {
 }
 
 footer p {
-    font-size: 32px;
+    font-size: 24px;
 }
 
 footer p:hover {
@@ -691,11 +736,22 @@ footer a {
     .border {
         width: calc(100% - 40px);
     }
+
+    .preview_container h1 {
+        font-size: 32px;
+        line-height: 44px;
+        margin: 100px 10px 100px;
+    }
 }
 
 @media screen and (max-width: 1024px) {
     .preview_container {
         justify-content: center;
+    }
+
+    #preview_background img {
+        height: 600px;
+        object-fit: cover;
     }
 
     .banner-first_container p {
@@ -727,6 +783,15 @@ footer a {
 @media screen and (max-width: 800px) {
     header {
 
+    }
+
+    .preview_container {
+        height: 400px;
+    }
+
+    #preview_background img {
+        height: 435px;
+        object-fit: cover;
     }
 
     .menu-logo_container {
@@ -879,11 +944,27 @@ footer a {
     }
 
     footer {
-        height: 400px;
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .preview_container h1 {
+        font-size: 16px;
     }
 }
 
 @media screen and (max-width: 460px) {
+
+    .preview_container {
+        height: 500px;
+    }
+
+    #preview_background img {
+        height: 465px;
+        object-fit: cover;
+    }
+
     .banner-first_container p {
         font-size: 28px;
         line-height: 34px;
@@ -909,10 +990,6 @@ footer a {
         right: 40px;
     }
 
-    .work-blocks_container {
-
-    }
-
     .banner-second_container {
         margin: 40px auto;
     }
@@ -935,6 +1012,11 @@ footer a {
         height: 380px;
     }
 
+    .work-block_03,
+    .work-block_04 {
+        height: 400px;
+    }
+
     .block_00-btn {
         width: 100%;
         max-width: calc(100% - 160px);
@@ -951,7 +1033,7 @@ footer a {
     }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 430px) {
     .preview-point_container {
         width: 100%;
         max-width: 100%;
