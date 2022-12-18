@@ -742,6 +742,16 @@ footer a {
         line-height: 44px;
         margin: 100px 10px 100px;
     }
+
+    .preview_background-bottom {
+        bottom: -680px;
+    }
+}
+
+@media screen and (max-width: 1148px) {
+    .preview_background-bottom {
+        bottom: -640px;
+    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -794,6 +804,10 @@ footer a {
         object-fit: cover;
     }
 
+    .preview_background-bottom {
+        bottom: -500px;
+    }
+
     .menu-logo_container {
         width: 100%;
     }
@@ -816,7 +830,7 @@ footer a {
     }
 
     .preview_container h1 {
-        font-size: 20px;
+        font-size: 18px;
         line-height: 32px;
         margin: 40px 0;
     }
@@ -950,7 +964,7 @@ footer a {
 
 @media screen and (max-width: 600px) {
     .preview_container h1 {
-        font-size: 16px;
+        font-size: 14px;
     }
 }
 
@@ -964,6 +978,11 @@ footer a {
         height: 465px;
         object-fit: cover;
     }
+
+    .preview_background-bottom {
+        bottom: -520px;
+    }
+
 
     .banner-first_container p {
         font-size: 28px;
