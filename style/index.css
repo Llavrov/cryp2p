@@ -984,15 +984,33 @@ footer a {
         height: 500px;
     }
 
+    #preview_background img,
+    #preview_background {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
     #preview_background img {
-        height: 465px;
+        width: 100vw;
+        height: 505px;
         object-fit: cover;
     }
 
-    .preview_background-bottom {
-        bottom: -520px;
+    .preview_background-top {
+        width: 100vw;
+        left: -20px;
     }
 
+    .preview_background-bottom {
+        bottom: -560px;
+        width: 100vw;
+        left: -20px;
+    }
+
+    .preview_container h1 {
+        font-size: 13px;
+        line-height: 20px;
+    }
 
     .banner-first_container p {
         font-size: 28px;
@@ -1041,9 +1059,10 @@ footer a {
         height: 380px;
     }
 
+    .work-block_01,
     .work-block_03,
     .work-block_04 {
-        height: 400px;
+        height: 420px;
     }
 
     .block_00-btn {
